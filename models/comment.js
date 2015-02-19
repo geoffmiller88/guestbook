@@ -4,7 +4,7 @@ var mongoose = require('mongoose'),
 
 //*****Create and export the Comment Schema
 var CommentSchema = new Schema({
-	commment: { type: String },
+	comment: { type: String },
 	timestamp: { type: Date, 'default': Date.now }
 });
 

@@ -11,14 +11,14 @@ module.exports = {
 	},
 	create: function(req, res) {
 		//save a new comment
-		var saveComment = function() {
-			var comment = new Models.Comment({
-				comment: req.body.comment
-			});
+		
+		var comment = new Models.Comment({
+			comment: req.body.comment
+		});
 
-			comment.save(function(err, newComment) {
-				res.redirect('/comments');
-			});
-		}
+		comment.save(function(err, newComment) {
+			res.redirect('/comments');
+		});
+		
 	}
 };
